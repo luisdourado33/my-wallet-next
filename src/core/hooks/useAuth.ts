@@ -10,6 +10,6 @@ export default function useAuth() {
   return {
     ...authentication,
     signInMock: () => dispatch(signInMock()),
-    signOut: dispatch(signOut())
+    signOut: () => dispatch(signOut())
   }
 }
