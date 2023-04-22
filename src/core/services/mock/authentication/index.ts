@@ -13,5 +13,6 @@ export const makeUser = (accessGroup: AccessGroupEnum): IUser => {
     email: faker.internet.email(),
     accessGroup: accessGroup,
     balance: Number(faker.finance.amount()),
+    token: faker.datatype.uuid()
   }
 }
