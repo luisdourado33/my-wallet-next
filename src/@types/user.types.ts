@@ -17,5 +17,6 @@ export interface IUser {
   lastName: string;
   email?: string;
   balance: number;
-  accessGroup: AccessGroupEnum
+  accessGroup: AccessGroupEnum,
+  token?: string;
 }
