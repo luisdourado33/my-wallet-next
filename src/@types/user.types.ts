@@ -6,7 +6,7 @@ export enum AccessGroupEnum {
   ADMIN = 1,
   MEMBER = 2,
   VIP = 3,
-};
+}
 
 /**
  * IUser:
@@ -17,6 +17,6 @@ export interface IUser {
   lastName: string;
   email?: string;
   balance: number;
-  accessGroup: AccessGroupEnum,
+  accessGroup: AccessGroupEnum;
   token?: string;
 }

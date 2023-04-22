@@ -1,16 +1,16 @@
-import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
 
-import { IAuthentication } from '@/@types/authentication.types';
-import { makeUser } from '@/core/services/mock/authentication';
-import { AccessGroupEnum } from '@/@types/user.types';
+import { IAuthentication } from "@/@types/authentication.types";
+import { makeUser } from "@/core/services/mock/authentication";
+import { AccessGroupEnum } from "@/@types/user.types";
 
 const initialState: IAuthentication = {
-  isAuthenticated: false
+  isAuthenticated: false,
 };
 
 export const authenticationSlice = createSlice({
-  name: 'authentication',
+  name: "authentication",
   initialState,
   reducers: {
     signIn(state, action: PayloadAction<IAuthentication>) {
@@ -23,8 +23,8 @@ export const authenticationSlice = createSlice({
     signOut(state) {
       state.isAuthenticated = false;
       state.user = undefined;
-    }
-  }
+    },
+  },
 });
 
 export const { signIn, signInMock, signOut } = authenticationSlice.actions;

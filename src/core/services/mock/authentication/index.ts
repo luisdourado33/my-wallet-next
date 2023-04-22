@@ -1,4 +1,4 @@
-import { faker } from '@faker-js/faker';
+import { faker } from "@faker-js/faker";
 import { AccessGroupEnum, IUser } from "@/@types/user.types";
 
 /**
@@ -13,6 +13,6 @@ export const makeUser = (accessGroup: AccessGroupEnum): IUser => {
     email: faker.internet.email(),
     accessGroup: accessGroup,
     balance: Number(faker.finance.amount()),
-    token: faker.datatype.uuid()
-  }
-}
+    token: faker.datatype.uuid(),
+  };
+};

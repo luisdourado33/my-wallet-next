@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 export default function LoginTemplate({}: Props) {
-  return (
-    <div>Login</div>
-  )
+  return <div>Login</div>;
 }

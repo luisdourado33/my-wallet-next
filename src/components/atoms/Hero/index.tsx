@@ -1,17 +1,11 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
   children?: React.ReactNode;
-  bgImage?: any,
+  bgImage?: any;
   className?: string;
-}
+};
 
-export default function Hero({
-  children,
-  className,
-  bgImage,
-}: Props) {
-  return (
-    <div className={`px-12 bg-purple-900 ${className}`}>{children}</div>
-  )
+export default function Hero({ children, className, bgImage }: Props) {
+  return <div className={`px-12 bg-purple-900 ${className}`}>{children}</div>;
 }
