@@ -2,8 +2,9 @@ import React from "react";
 
 type Props = {
   children?: React.ReactNode;
+  className?: string;
 };
 
-export default function Container({ children }: Props) {
-  return <div className="w-full h-full">{children}</div>;
+export default function Container({ children, className }: Props) {
+  return <div className={`w-full h-full ${className}`}>{children}</div>;
 }

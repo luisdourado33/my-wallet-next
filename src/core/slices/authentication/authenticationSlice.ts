@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
-import { IAuthentication } from "@/@types/authentication.types";
-import { makeUser } from "@/core/services/mock/authentication";
+import type { IAuthentication } from "@/@types/authentication.types";
 import { AccessGroupEnum } from "@/@types/user.types";
+
+import { makeUser } from "@/core/services/mock/authentication";
 
 const initialState: IAuthentication = {
   isAuthenticated: false,

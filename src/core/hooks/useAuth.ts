@@ -4,7 +4,7 @@ import { RootState } from "../store";
 import {
   signInMock,
   signOut,
-} from "@/features/authentication/authenticationSlice";
+} from "@/core/slices/authentication/authenticationSlice";
 
 export default function useAuth() {
   const authentication = useSelector(
